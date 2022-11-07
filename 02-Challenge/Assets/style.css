@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(24, 170, 99);
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 30px;
+    font-style: oblique;
+}
+
+header nav {
+    padding-top: 10px;
+    margin-right: 25px;
+    float: right;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+body {
+    background-color: rgb(170, 109, 34);
+}
+
+.hero {
+    height: 100px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-image: url("https://i0.wp.com/www.dontforgetatowel.com/wp-content/uploads/2014/04/Darth-Maul-slider.jpg?resize=880%2C385&ssl=1");
+    background-size: 300px 100px;
+    background-position: center;
+}
+
+.hero-text {
+    text-align: end;
+    position: absolute;
+    top: 17%;
+    right: 5%;
+    color: cyan;
+}
+
+.footer {
+    padding: 48px;
+    clear: both;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
