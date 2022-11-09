@@ -35,6 +35,10 @@ body {
     background-color: rgb(170, 109, 34);
 }
 
+@media only screen and (max-width: 400px) {
+    *{background-color: red;
+}
+}
 .hero {
     height: 100px;
     width: 100%;
@@ -46,10 +50,14 @@ body {
 
 .hero-text {
     text-align: end;
-    position: absolute;
-    top: 17%;
-    right: 5%;
+    position: relative;
+    top: 80%;
+    right: 3%;
     color: cyan;
+}
+
+.aside {
+    text-align: start;
 }
 
 .footer {
@@ -57,4 +65,8 @@ body {
     clear: both;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
+}
+
+[class*="col-"] {
+    width: 100%;
 }
