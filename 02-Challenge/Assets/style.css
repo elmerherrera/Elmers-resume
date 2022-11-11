@@ -4,25 +4,6 @@
     margin: 0;
 }
 
-.div1 {
-    width: 500px;
-    height: 200px;
-    border-right: 1px solid red;
-    font-size: 60px;
-    float: left;
-    padding-top: 80px;
-    margin-top: 100px;
-    margin-left: 100px;
-}
-
-.div2 {
-    width: 800px;
-    height: 200px;
-    float: right;
-    margin-top: 100px;
-    margin-right: 100px;
-}
-
 header {
     background-color: rgb(24, 170, 99);
     padding-bottom: 5px;
@@ -55,8 +36,14 @@ body {
 }
 
 @media only screen and (max-width: 400px) {
+    main {
+        flex-direction: column;
+    }
     body {background-color: red;
-}
+    }
+    header {
+        background-color: beige;
+    }
 }
 .hero {
     height: 100px;
@@ -67,6 +54,8 @@ body {
     background-position: center;
 }
 
+
+
 .hero-text {
     text-align: end;
     position: relative;
@@ -75,17 +64,24 @@ body {
     color: cyan;
 }
 
-.aside {
-    text-align: start;
+.content {
+    width: 75%;
+    display: inline-flex;
+
 }
 
-.footer {
-    padding: 48px;
-    clear: both;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+.flex-container {
+    display: flex;
 }
 
-[class*="col-"] {
-    width: 100%;
+image {
+    width: 100px;
+    height: 100px;
+
+}
+
+.work image {
+    display: inline-block;
+    margin: 100px auto;
+    max-width: 200px;
 }
