@@ -6,8 +6,8 @@
 
 header {
     background-color: rgb(24, 170, 99);
-    padding-bottom: 5px;
-    padding-left: 15px;
+    padding-bottom: 2px;
+    padding-left: auto;
 }
 
 header h1 {
@@ -16,9 +16,15 @@ header h1 {
     font-style: oblique;
 }
 
+header img {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
 header nav {
-    padding-top: 10px;
-    margin-right: 25px;
+    padding-top: auto;
+    margin-right: auto;
     float: right;
 }
 
@@ -29,10 +35,7 @@ header nav {
 header nav ul li {
     display: inline-block;
     margin-left: 5px;
-}
-
-body {
-    background-color: rgb(170, 109, 34);
+    margin-top: 20px;
 }
 
 @media only screen and (max-width: 400px) {
@@ -50,11 +53,9 @@ body {
     width: 100%;
     margin-bottom: 15px;
     background-image: url("https://i0.wp.com/www.dontforgetatowel.com/wp-content/uploads/2014/04/Darth-Maul-slider.jpg?resize=880%2C385&ssl=1");
-    background-size: 300px 100px;
+    background-size: auto;
     background-position: center;
 }
-
-
 
 .hero-text {
     text-align: end;
@@ -64,24 +65,35 @@ body {
     color: cyan;
 }
 
+body {
+    background-color: rgb(170, 109, 34);
+}
+
+main {
+    display: inline-block;
+}
+
 .content {
     width: 75%;
-    display: inline-flex;
+    display: inline-block;
 
 }
 
-.flex-container {
-    display: flex;
-}
-
-image {
-    width: 100px;
-    height: 100px;
-
+div {
+    display: inline-block;
+    width: auto;
+    height: auto;
 }
 
 .work image {
     display: inline-block;
     margin: 100px auto;
     max-width: 200px;
+}
+footer {
+    display: inline;
+}
+
+.about {
+    text-align: center;
 }
